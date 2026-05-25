@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admissions - St. Charles Kitagata SS</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+ nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+
+
+
+        section {
+            width: 85%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            background: #004080;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #003366;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Admissions</h1>
+
+
+
+</header>
+<!-- NAVIGATION -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+
+
+<section>
+    <h2>Admission Requirements</h2>
+    <ul>
+        <li>Academic results</li>
+        <li>Birth certificate</li>
+        <li>Passport photos</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Apply Online</h2>
+
+    <form action="submit.php" method="POST">
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="date" name="dob" required>
+        <input type="text" name="school" placeholder="Previous School" required>
+
+        <select name="class" required>
+            <option value="">Select Class</option>
+            <option>S1</option>
+            <option>S2</option>
+            <option>S3</option>
+            <option>S4</option>
+            <option>S5</option>
+            <option>S6</option>
+        </select>
+
+        <input type="text" name="parent" placeholder="Parent Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+
+        <textarea name="info" placeholder="Additional Info"></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</section>
+
+<section>
+    <h2>Or Apply via Google Form</h2>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhhxo3aCT3a0lXSE-KbeKBx93kdXVBDZ79PbM0k3qeS1Dxuw/viewform?embedded=true" width="640" height="808" frameborder="0" marginheight="0" marginwidth="0">Loading…
+</iframe>
+</section>
+
+</body>
+</html>
+
